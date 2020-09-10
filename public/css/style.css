@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #292653d3;
+  color: rgb(236, 229, 229);
+  font-family: 'Roboto', sans-serif;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  margin: auto;
+  width: 90%;
+}
+
+.header-container {
+  padding: 0.6em 0.65em;
+  background-color: #343153;
+  background-attachment: sticky;
+  position: 0;
+}
+
+.logo {
+  font-size: 1.23em;
+}
+
+.weather-information {
+  padding: 1.3em 0;
+}
+
+.weather-img {
+  text-align: center;
+  margin: 1.5em;
+  animation: beating ease-in-out infinite ;
+}
+.forcast-error{
+  color:red;
+}
+
+img {
+  max-width: 100%;
+}
+
+.weather-forcast {
+  line-height: 1.8em;
+  padding: 1.2em 0;
+}
+.search-flex{
+  display:flex;
+  align-items: center;
+}
+.filter, .search-field {
+  padding: 0.8em;
+  border-radius: 0.35em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1em;
+  background-color: #302d5fd3;
+  border: solid 2px white;
+  color: white;
+}
+.search-field{
+  border:none;
+  border-bottom: white 2px solid;
+  border-radius: 0;
+  background-color: unset;
+}
+.search-field::placeholder{
+  color:white;
+  font-size: 1.1em;
+
+}
+.date {
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  font-size: 1.7em;
+  margin-bottom: 0.53em;
+}
+
+footer {
+  background-attachment: absolute;
+  text-align: center;
+  position: bottom 0%;
+  background-color: #343153;
+  padding: 3em;
+}
+
+.title {
+  color: #2c2946;
+  font-weight: 700;
+}
+
+@keyframes beating {
+  0% {
+    transform: scale(1.5);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  75% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(0.4);
+  }
+}
+.footer-text{
+  line-height:1.7em;
+}
+@media(max-width:760px) {
+  .header-flex {
+    display: unset;
+    text-align: center;
+  }
+  .filter {
+    width: 95%;
+    margin: 0.5em 0;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1.2em;
+  }
+}
