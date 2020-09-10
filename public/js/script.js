@@ -2,7 +2,6 @@ const filterResult = document.querySelector(".filter");
 const date = document.querySelector(".date");
 const exactDateArr = Date().split("G");
 const exactDate = exactDateArr[0];
-
 const populateField = (data) => {
   let weatherForcastSection = document.querySelector(".weather-forcast");
   console.log(weatherForcastSection);
@@ -27,7 +26,7 @@ const populateField = (data) => {
       </div>
     </div>
   </div>
-  
+
   <div class="other-info flex grid">
     <div class="wind">
       <h3 class='title'><i class="fas fa-wind"></i> Wind</h3>
